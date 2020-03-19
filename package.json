@@ -1,0 +1,51 @@
+{
+  "name": "dou-js-utilities",
+  "version": "0.1.0",
+  "description": "Utilities for javascript developers <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:DigitalOnUs/internal/frontend/dou-js-utilities.git"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "js",
+    "utilities",
+    "dou"
+  ],
+  "files": [
+    "src/*",
+    "*.js"
+  ],
+  "author": "Cesar Becerra",
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "esm": "^3.2.25",
+    "regenerator-runtime": "^0.13.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.1.1",
+    "prettier": "^1.19.1",
+    "terser-webpack-plugin": "^2.3.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

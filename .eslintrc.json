@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "camelcase": "off",
+    "prettier/prettier": ["error"],
+    "import/prefer-default-export": false,
+    "prefer-destructuring": "off",
+    "array-callback-return": ["error", { "allowImplicit": true }],
+    "no-use-before-define": ["error", { "functions": false, "classes": false }],
+    "no-shadow": "off"
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "swal": true,
+    "$": true
+  }
+}
