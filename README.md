@@ -6,9 +6,9 @@ I have implemented a lot of useful functions that will bring us more efficient c
 
 Using some paradigms like:
 
-> 1.- Asynchronous - Synchronous control and Polymorphism
-> 2.- Lazy loading of data using generators
-> 3.- Functions using Concurrency
+- Asynchronous - Synchronous control and Polymorphism
+- Lazy loading of data using generators
+- Functions using Concurrency
 
 I hope you enjoy this library and if you have any questions or doubts, don't hesitate to contact [me](mailto:cesar.becerra@digitalonus.com).
 
