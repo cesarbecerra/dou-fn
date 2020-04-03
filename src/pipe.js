@@ -1,1 +1,4 @@
-export const pipe = (...fns) => fns.reduce((fn, curr) => (...args) => curr(fn(...args)))
+import reduce from './reduce'
+import call from './call'
+
+export default (f, ...fns) => (...vs) => reduce(call, f(...vs), fns)

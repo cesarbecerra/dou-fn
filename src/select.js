@@ -5,20 +5,20 @@ import nop from './nop'
 
 export default currying((_, iterator) => {
   if (_ === 0) return []
-  let r = []
+  let data = []
   iterator = toIterable(iterator)
   return (function recursivity() {
     let c
-    while (!(c === iterator.next()).done) {
+    while (!(c = iterator.next()).done) {
       const v = c.value
       if (promiseCheck(v)) {
         return v
-          .then(v => ((r.push(v), r).length == _ ? r : recursivity()))
+          .then(v => ((data.push(v), data).length == _ ? data : recursivity()))
           .catch(e => (e == nop ? recursivity() : Promise.reject(e)))
       }
-      r.push(v)
-      if (r.length == _) return r
+      data.push(v)
+      if (data.length == _) return data
     }
-    return r
+    return data
   })()
 })

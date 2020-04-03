@@ -1,1 +1,1 @@
-export default first = ([_]) => _
+export default ([_]) => _

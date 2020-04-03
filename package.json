@@ -1,14 +1,15 @@
 {
-  "name": "dou-js-utilities",
+  "name": "dou-fn",
   "version": "0.1.0",
   "description": "Utilities for javascript developers <3",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "mocha -R spec test/*.js",
+    "build": "webpack --config webpack.config.js --env.NODE_ENV=production"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:DigitalOnUs/internal/frontend/dou-js-utilities.git"
+    "url": "git@gitlab.com:DigitalOnUs/internal/frontend/dou-fn.git"
   },
   "directories": {
     "test": "test"

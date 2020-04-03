@@ -1,1 +1,1 @@
-export default currying = fn => (arg, ...args) => (arrgs.length < 1 ? (...args) => fn(arg, ...args) : fn(arg, ...args))
+export default fn => (arg, ...args) => (args.length < 1 ? (...args) => fn(arg, ...args) : fn(arg, ...args))

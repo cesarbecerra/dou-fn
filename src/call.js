@@ -1,3 +1,3 @@
-import promiseCheck from "./promiseCheck";
+import promiseCheck from './promiseCheck'
 
-export default call = (a, fn) => promiseCheck(a) ? a.then(f) : fn(a);
+export default (a, fn) => (promiseCheck(a) ? a.then(f) : fn(a))

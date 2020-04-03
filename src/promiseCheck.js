@@ -1,1 +1,1 @@
-export default promiseCheck = i => i instanceof Promise
+export default _ => _ instanceof Promise

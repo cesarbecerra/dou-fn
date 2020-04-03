@@ -1,1 +1,1 @@
-export default not = arg => !arg
+export default arg => !arg
